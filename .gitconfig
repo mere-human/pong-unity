@@ -1,5 +1,5 @@
 # For this file to be applied to your config, please run the following command
-#  git config --local include.path .gitconfig
+#  git config --local include.path ../.gitconfig
 
 [core]
 	autocrlf = false
