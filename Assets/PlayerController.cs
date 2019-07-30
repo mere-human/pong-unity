@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float velocityX = 0;
         float velocityY = 0;
         if (Input.GetKey(moveUp))
         {
@@ -28,6 +29,6 @@ public class PlayerController : MonoBehaviour
         {
             velocityY = -speed;
         }
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, velocityY);
+        rigidbody2d.velocity = new Vector2(velocityX, velocityY);
     }
 }
