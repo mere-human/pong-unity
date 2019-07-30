@@ -20,10 +20,10 @@ public class GameSetup : MonoBehaviour
         var wallThickness = 1f;
 
         topWall.size = new Vector2(mainCamera.ScreenToWorldPoint(new Vector3(Screen.width * 2.0f, 0f, 0f)).x, wallThickness);
-        topWall.offset = new Vector2(0f, mainCamera.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f)).y + 1.5f);
+        topWall.offset = new Vector2(0f, mainCamera.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f)).y + 0.5f);
 
         bottomWall.size = new Vector2(mainCamera.ScreenToWorldPoint(new Vector3(Screen.width * 2.0f, 0f, 0f)).x, wallThickness);
-        bottomWall.offset = new Vector2(0f, mainCamera.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).y - 1.5f);
+        bottomWall.offset = new Vector2(0f, mainCamera.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).y - 0.5f);
 
         leftWall.size = new Vector2(wallThickness, mainCamera.ScreenToWorldPoint(new Vector3(0f, Screen.height * 2.0f, 0f)).y);
         leftWall.offset = new Vector2(mainCamera.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x - 0.5f, 0f);
