@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
         {
             PlayerScore2 += 1;
         }
-        Debug.Log("Score: Player1 - " + PlayerScore1 + " Player2 - " + PlayerScore2);
     }
 
     private void OnGUI()
