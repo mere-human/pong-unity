@@ -7,10 +7,12 @@ public class BallController : MonoBehaviour
     public float ballSpeed = 100;
 
     private Rigidbody2D rigidbody2d;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         Invoke(nameof(GoBall), 2);
     }
 
@@ -43,6 +45,9 @@ public class BallController : MonoBehaviour
             {
                 var velocityY = rigidbody2d.velocity.y / 2 + colRigBody.velocity.y / 3;
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, velocityY);
+
+                audioSource.pitch = Random.Range(0.8f, 1.2f);
+                audioSource.Play();
             }
         }
     }
