@@ -35,9 +35,4 @@ public class GameSetup : MonoBehaviour
         player1.position = new Vector3(mainCamera.ScreenToWorldPoint(new Vector3(75f, 0)).x, 0, 0);
         player2.position = new Vector3(mainCamera.ScreenToWorldPoint(new Vector3(Screen.width - 75f, 0)).x, 0, 0);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }
