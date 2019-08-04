@@ -2,7 +2,7 @@
 
 The classic arcade Pong 2D game created with Unity / C#.
 
-The game was done with the help of 2D Game tutorial.
+The game was done with the help of 2D Game tutorial from Brackeys.
 
 The one thing I changed was the usage of C# instead of JavaScript.
 
